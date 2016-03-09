@@ -1,0 +1,452 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ * {{{
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* /css reset }}}*/
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+a:hover{
+    cursor: pointer;
+}
+header {
+    background-color: #522a5c;
+    height: 80px;
+}
+header #my-logo {
+    margin: 43px 0 0 120px;
+    display: inline;
+}
+header span{
+    float: right;
+    margin-top: 43px;
+}
+#github{
+    display: inline-block;
+    margin:0 10px 0 72px; 
+    width: 32px;
+    height: 37px;
+    background: url(../img/github-logo.png) no-repeat;
+}
+header ul {
+    float: left;
+}
+header ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 27px;
+    line-height: 34px;
+    font-size: 14px;
+    color: white;
+}
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+.banner {
+    background: url(../img/banner-bg.jpg);
+    height: 525px;
+}
+.banner-text{
+    position: relative;
+    left: 730px;
+    top: 405px;
+    background-color: white; 
+    background:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,0.7) 75%,rgba(255,255,255,0) 100%);
+    width: 340px;
+    height: 80px;
+    padding: 10px 10px 30px;
+    color: white;
+}
+.banner-text h2{
+    font-size: 14px;
+    text-align: right;
+}
+.clearfix:after {content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { *zoom:1; }
+.banner-text span{
+    float: right;
+    line-height: 1.5;
+    margin-top: 12px;
+}
+.pic-show {
+    height: 475px;
+    background-color: #eeeeee;
+    display: inline-block;
+    padding: 10px 110px 100px 100px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.pic-show .pic {
+    float: left;
+    background-color: white;
+    width: 320px;
+    height: 365px;
+    margin-left: 10px;
+}
+.pic img {
+    width: 300px;
+    height:180px;
+    margin: 10px;
+}
+.pic-show p {
+    text-indent: 2em;
+    margin: 15px 30px 25px;
+    line-height: 1.7;
+}
+.self {
+    width: 600px;
+    height: 525px;
+    margin: 0 auto;
+}
+.self img {
+    position: relative;
+    left: 220px;
+    top: -50px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.self h3 {
+    text-align: center;
+    margin-bottom: 50px; 
+}
+.self article p{
+    text-indent: 2em;
+    font-size: 14px;
+    line-height: 1.5;
+}
+footer {
+    background-color: black;
+    display: inline-block;
+    width: 100%;
+}
+.foot-title {
+    height: 35px;
+    border-bottom: 1px solid #eeeeee;
+}
+.foot-title span{
+    text-align: center;
+}
+.foot-title li{
+    display: inline;
+    list-style: none;
+    line-height: 35px;
+    margin:0 12px;
+}
+.foot-title ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+.foot-content ul li a {
+    text-decoration: none; 
+    color: white;  
+}
+.foot-content ul li a:hover {
+    text-decoration: underline;
+}
+.foot-content {
+    margin: 0 90px 0 110px;
+}
+.foot-block {
+    float: left;
+    width: 200px;
+    line-height: 1.7;
+    color: white;
+}
+.foot-block .title {
+    margin-top: 39px;
+    margin-bottom: 20px;
+}
+.foot-block li{
+    list-style: none;
+}
+.foot-declare {
+    margin-top: 88px;
+    margin-bottom: 53px;
+    text-align: center;
+}
+.foot-declare span {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+.foot-declare img {
+    position: relative;
+    left: -52px;
+    top: 55px;
+}
+
+
+/*article.html*/
+main {
+    background-color: #eeeeee;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}
+.content-left {
+    float: left;
+    display: block;
+    padding: 20px 10px 333px 60px;
+    width: 760px;
+}
+.content-left section {
+    margin-bottom: 8px;
+}
+.content-left section article{
+    background-color: white;
+    float: left;
+    margin-left: 50px;
+    width: 710px; 
+    padding: 17px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.tag-left {
+    float: left;
+    position: relative;
+    top: 20px;
+    margin-left:-100%;
+    width:  50px;
+}
+.tag-title, .tag-time {
+    color: white;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.tag-time {
+    background-color: #522a5c;
+}
+.tag-title {
+    background-color: #a660b7;
+}
+.content-left article h2 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #a660b7;
+    font-weight: bold;
+}
+.content-left article h3 {
+    line-height: 28px;
+    font-weight: bold;
+}
+.content-left article .clearfix {
+    margin-top: 5px;
+}
+.content-left article .clearfix p {
+    text-indent: 2em;
+    line-height: 24px;
+}
+.content-left section .article-time {
+    float: right;
+    color: #999999;
+    margin-top: 25px;
+}
+
+aside { 
+    float: left;
+    width: 260px;
+    margin-top:20px; 
+}
+.search {
+    height: 42px;
+    padding: 19px;
+    background-color: white;
+}
+.search input,button {
+    display: inline-block;
+    float: left;
+}
+.search input {
+    width: 121px;
+    height: 36px;
+    line-height: 100%;
+    color: #eeeeee;
+    border:1px solid #dddddd;
+    padding-left: 45px;
+    background: url(../img/search.png) no-repeat;
+}
+.search input:focus {
+    color: black;
+}
+.search label {
+
+}
+.search button {
+    width: 52px;
+    height: 40px;
+    background-color: #dddddd;
+    border: 1px solid #dddddd;
+    color: white;
+}
+.choose, .calendar-box,.tags{
+    margin-top: 10px;
+    background-color: white;
+    font-size: 14px;
+}
+.choose {
+    border-bottom: 1px solid #dddddd;
+}
+.choose ul li {
+    list-style: none;
+    height: 50px;
+    border-top: 1px solid #dddddd;
+}
+.choose li span {
+    display: block;
+    height: 100%;
+    padding-left: 8px;
+    line-height: 49px;
+    color: #666666; 
+    border-left: 4px solid #dfc6e6;
+}
+.choose li span:link {
+    border-left: 4px solid #dfc6e6;
+}
+.choose li span:visited,
+.choose li span:hover,
+.choose li span:active  {
+    border-left: 4px solid #522a5c;
+}
+
+.calendar-box {
+    padding: 25px 20px;
+}
+.calendar-box .year {
+    margin-bottom: 10px;
+}
+.calendar-box .year img {
+    float: left;
+    margin-top: 3px;
+}
+.calendar-box .year span {
+    float: left;
+    width: 208px;
+    text-align: center;
+    color: #773c88;
+    font-weight: bold;
+}
+.calendar-box ul .line {
+    float: left;
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+    padding: 5px 0;
+    color: #999999;
+}
+.calendar-box ul .line ul li {
+    float: left;
+    line-height: 20px;
+    width: 30px;
+    text-align: center;
+}
+.calendar-box ul .line li:hover {
+    background-color: #773c88;
+}
+.tags {
+    padding: 15px 15px 35px 15px;
+}
+.tags span {
+    color: #999999;
+    font-size: 14px;
+    height: 14px;
+    text-align: left;
+}
+.tags div {
+    margin-top: 15px;
+}
+.tags h1,
+.tags h2,
+.tags h3 {
+    color: #773c88;
+    display: inline-block;
+    text-indent: 1px;
+}
+.tags h1 {
+    font-weight: bold;
+    font-size: 30px;    
+}
+.tags h2 {
+    font-weight: bold;
+    font-size: 20px;    
+}
+.foot-page {
+    display: inline-block;
+    height: 100%;
+    margin: 10px auto 0px;
+}
+.foot-page ul {
+    margin-left: 105px;
+}
+.foot-page li {
+    list-style: none;
+    float: left;
+    padding: 15px;
+    background-color: white;
+    margin-left: 10px;
+}
+.foot-page li:nth-child(-n+2) {
+    color: #999999;
+}
+.foot-page li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+.foot-page li:hover {
+    background-color: #a660b7;
+    color: white;
+}
