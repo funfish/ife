@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset='utf-8'>
+	<title>倪创伟</title>
+	<style>
+		#container1, #container2{
+			width: 150px;
+			height: 600px;
+			background-color: #eeeeee;
+			position: relative;
+			display: inline-block;
+		}
+		#container1 {
+			left: 10px;
+			top: 30px;
+		}
+		#container2 {
+			left: 300px;
+			top: 30px;
+		}
+		#drag {
+			position: absolute;
+			left : 0px;
+			top: 0px;
+			height: 60px;
+			width: 150px;
+			background: red;
+			z-index: 2;
+		}
+		#drag2 {
+			position: absolute;
+			left : 0px;
+			top: 60px;
+			height: 60px;
+			width: 150px;
+			background: blue;
+			z-index: 2;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="darg">
+		<div id="container1">
+			<div id="drag">111</div>
+			<div id="drag2">11</div>
+		</div>
+		<div id="container2"></div>
+	</div>
+	<script src="js/util.js"></script>
+<script src="js/task02_5.js"></script>
+</body>
+</html>

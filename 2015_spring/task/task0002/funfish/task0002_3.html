@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset=utf-8 />
+	<title>倪创伟</title>
+	<style>
+.center{
+	margin:0 auto;
+}
+#drag{
+	position: relative;
+	left :10px;
+	top: 30px;
+	height: 200px;
+	width: 100px;
+	background: red;
+}
+#box, #position{
+	position:relative;
+	width:492px;
+	height:172px;
+	margin:10px 0;
+	left:0px;
+}
+#box .countNum{
+	position:absolute;
+	right:0;
+	bottom:5px;
+}
+#box .imgList{
+	position:relative;
+	width:490px;
+	height:170px;
+	overflow:hidden;
+}
+#box .imgList li {
+	list-style: none;
+	position: absolute;
+	width:490px;
+	height:170px;
+	float: left;
+}
+#box .countNum li{
+	list-style: none;
+	width:20px;
+	height:20px;
+	float:left;
+	color:#fff;
+	border-radius:20px;
+	background:#f90;
+	text-align:center;
+	margin-right:5px;
+	cursor:pointer;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+}
+#box .countNum li.current{
+	background:#f60;
+	font-weight:bold;
+	opacity:1;
+	filter:alpha(opacity=70);
+}
+	</style>
+</head>
+<body>
+	<h1 class="center">倪创伟制作</h1>
+	<div id="box"></div>
+<script src="js/task02_3.js"></script>
+</body>
+</html>
